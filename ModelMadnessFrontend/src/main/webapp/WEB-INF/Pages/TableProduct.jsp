@@ -34,9 +34,12 @@
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th><h3 style=color:black;><strong>productID</strong></h3></th> 
-          <th><h3 style=color:black;><strong>DISCREPTION</strong></h3></th> 
-        <th><h3 style=color:black;><strong>PRODUCT PRICE</strong></h3></th>
+        <th><h3 style=color:black;><strong>product ID</strong></h3></th> 
+         <th><h3 style=color:black;><strong>Product Name</strong></h3></th> 
+          <th><h3 style=color:black;><strong>Description</strong></h3></th> 
+        <th><h3 style=color:black;><strong>Product Price</strong></h3></th>
+         <th><h3 style=color:black;><strong>Product Img</strong></h3></th> 
+          <th><h3 style=color:black;><strong>Action</strong></h3></th> 
         <th></th>
         <th></th>
       </tr>
@@ -48,7 +51,12 @@
       <tr>
           <td><h4 style=color:black;>${pro.pid}</h4></td>
           <td><h4 style=color:black;>${pro.pname}</h4></td>
-        <td><h4 style=color:black;>${pro.price}</h4></td>
+        <td><h4 style=color:black;>${pro.description}</h4></td>
+         <td><h4 style=color:black;>${pro.price}</h4></td>
+          <td><h4 style=color:black;><spring:url value="/resources/img/${pro.pid}.jpg" var="imgs"/><img height="45vh" max-width="45" src="${imgs}"/></h4></td>
+                 
+         
+        
      
           
           <td>
@@ -68,7 +76,9 @@
       </c:forEach>
         </tbody>
   </table>
-
+<a href = "backToAdminPage" class = "btn btn-primary" role = "button">
+              BACK
+            </a>
 </div>
 </body>
 </html>

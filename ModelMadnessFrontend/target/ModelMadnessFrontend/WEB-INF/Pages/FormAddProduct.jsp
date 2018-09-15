@@ -36,9 +36,15 @@
     </div>
   </div>
   <div class="form-group">
+    <label class="control-label col-sm-2" for="description"><h4 style="color:black;"><strong>Description:</strong></h4></label>
+    <div class="col-sm-8"> 
+      <form:input type="number" class="form-control" path="description"  value="${prod.description }" />
+    </div>
+  </div>
+   <div class="form-group">
     <label class="control-label col-sm-2" for="price"><h4 style="color:black;"><strong>Price:</strong></h4></label>
     <div class="col-sm-8"> 
-      <form:input class="form-control" path="price"  value="${prod.price }" />
+      <form:input type="number" class="form-control" path="price"  value="${prod.price }" />
     </div>
   </div>
      <div class="form-group">

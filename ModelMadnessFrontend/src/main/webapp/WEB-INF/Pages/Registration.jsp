@@ -21,8 +21,7 @@
 
 <div class="row" style="margin-left:-70px">
 <div class="col-md-8 col-sm-8 col-xs-8" >
-<img src="${pageContext.request.contextPath}/includes/images/register.jpg" style="height:500;width:100%" />
-</div>
+<spring:url value="/resources/img/register.jpg" var="imgs" /><img style="height:500;width:100%" src="${imgs}"/></div>
 <div class=" col-md-4 col-sm-4 col-xs-4" >
 	<h2 style="color:white;">Please Sign Up <small style="color:white;">It's free and always will be.</small></h2>
 			<hr class="colorgraph">
@@ -31,19 +30,19 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="userid"><h4 style="color:Black;" ><strong>USER ID:</strong></h4></label>
     
-      <form:input class="form-control" path="userid" value="${userd.userid}"/>
+      <form:input type="email" class="form-control" path="userid" value="${userd.userid}" required="true"/>
     
   </div>
     <div class="form-group">
-    <label class="control-label col-sm-2" for="email"><h4 style="color:Black;" ><strong>UserName</strong></h4></label>
+    <label class="control-label col-sm-2" for="username"><h4 style="color:Black;" ><strong>UserName</strong></h4></label>
   
-      <form:input class="form-control" path="username" value="${userd.username }"/>
+      <form:input  type="text" class="form-control" path="username" value="${userd.username}" required="true"/>
 
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-2" for="price"><h4 style="color:black;"><strong>Password</strong></h4></label>
+    <label class="control-label col-sm-2" for="password"><h4 style="color:black;"><strong>Password</strong></h4></label>
     <div class="col-sm-8"> 
-      <form:input class="form-control" path="password"  value="${userd.password }" />
+      <form:input  type="password" class="form-control" path="password"  value="${userd.password }" required="true" />
     </div>
   </div>
    

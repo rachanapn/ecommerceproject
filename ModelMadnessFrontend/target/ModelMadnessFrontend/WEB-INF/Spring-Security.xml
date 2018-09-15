@@ -12,7 +12,7 @@
 	<http>
 		<intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
 		  <intercept-url pattern="/user/**" access="hasRole('ROLE_USER')" />
-		  <intercept-url pattern="/dummy" access="hasRole('ROLE_USER')"/>
+		  <intercept-url pattern="/supplier" access="hasRole('ROLE_SUPPLIER')"/>
 		<!-- access denied page -->
 		<!-- <access-denied-handler error-page="/403" />  -->
 		<form-login 

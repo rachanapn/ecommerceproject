@@ -66,6 +66,13 @@ public class AdminController {
 		mv.addObject("prod", new Product());
 		return mv;
 	}
+	@RequestMapping("/backToAdminPage")
+	public String backToHomePage()
+	{
+		
+		 return "redirect:/admin";
+	}
+	
 	
 	@RequestMapping("/saveProduct")
 	

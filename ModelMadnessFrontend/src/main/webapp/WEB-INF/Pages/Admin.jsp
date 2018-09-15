@@ -40,15 +40,22 @@
     </div>
   </div>
     <div class="form-group">
-    <label class="control-label col-sm-2" for="email"><h4 style="color:Black;" ><strong>ProductName</strong></h4></label>
+    <label class="control-label col-sm-2" for="pname"><h4 style="color:Black;" ><strong>ProductName</strong></h4></label>
     <div class="col-sm-8">
       <form:input class="form-control" path="pname" value="${prod.pname }"/>
+    </div>
+  </div>
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="prodesc"><h4 style="color:Black;" ><strong>Description</strong></h4></label>
+    <div class="col-sm-8">
+      <form:input class="form-control" path="description" value="${prod.description }"/>
     </div>
   </div>
   <div class="form-group">
     <label class="control-label col-sm-2" for="price"><h4 style="color:black;"><strong>Price:</strong></h4></label>
     <div class="col-sm-8"> 
-      <form:input class="form-control" path="price"  value="${prod.price }" />
+   
+      <form:input type="number" class="form-control" id ="price" path="price" min="400" max="5000" value="${prod.price }"/>
     </div>
   </div>
      <div class="form-group">

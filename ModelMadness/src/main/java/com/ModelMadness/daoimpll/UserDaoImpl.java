@@ -137,6 +137,7 @@ public class UserDaoImpl implements UserDao {
 	public int  saveOrUpdate(User user) {
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(user);
+		
 		} catch (Exception e) {
 			// if any excpetion comes during execute of try block, catch will
 			// excute

@@ -36,71 +36,23 @@
 
 <body style="background-color:#76D7C4;">
 <%@include file="header.jsp"%>
-	<div class="colbody">
-		
-		<form class="form-horizontal abcdpay">
 
-			<div class="form-group">
-				<h3 style="color: blue; text-align: center;">
-					<U>Payment Details</U>
-				</h3>
-				<h5 style="color: black; text-align: center;">
-					When finished, click the <u>"SUBMIT"</u> buttons.
-				</h5>
-				<br> <br>
+<form:form cssClass="form-horizontal" action="success_page" method="POST">
+  Select Payment Options
 
-				<div class="form-group">
-					<input type="radio" name="card" value="debit card"> Credit
-					Card <select>
-						<option value="empty"></option>
-						<option value="visa card">VISA Credit Card</option>
-						<option value="sbi card">SBI Credit Card</option>
-						<option value="citi card">CITI Credit Card</option>
-						<option value="icici bank">ICICI Credit Card</option>
-					</select>
+  <label><input type="radio" name="payment" value="Credit Card" required>Credit Card</label><br>
+  
 
-				</div>
-				<br> <br>
-				<div class="form-group">
-					<input type="radio" name="card" value="debit card"> Debit
-					Card <select>&nbsp;
-						<option value="empty"></option>
-						<option value="visa card">VISA Debit Card</option>
-						<option value="sbi card">SBI Debit Card</option>
-						<option value="citi card">CITI Debit Card</option>
-						<option value="icici bank">ICICI Debit Card</option>
-					</select>
+  <label><input type="radio" name="payment" value="debitcard">debitcard</label><br>
+  <label><input type="radio" name="payment" value="paytm">paytm</label>
+  <br>
+  <label><input type="radio" name="payment" value="phonepay" >phonepay</label><br>
+  <label><input type="radio" name="payment" value="cashondelivery">cashondelivery</label><br>
+  
 
-				</div>
+ <input type="submit" value="submit">
+</form:form>
 
-				<br> <br>
-				<div class="form-group">
-					<input type="radio" name="card" value="net bank"> Net
-					Banking <select>
-						<option value="empty"></option>
-						<option value="visa card">APEX BANK</option>
-						<option value="sbi card">CANARA BANK</option>
-						<option value="citi card">INDIAN BANK</option>
-						<option value="icici bank">SBI BANK</option>
-					</select>
-				</div>
-
-				<br> <br>
-				<div class="form-group">
-					<input type="radio" name="card" value="cash on delivery">
-					Cash on Delivery<br>
-				</div>
-
-				<br> <br>
-			<div class="text-center">
-	
-	       <a href="success_page" class="btn btn-success" role="button">SUBMIT</a>
-	       <a href="tousde" class="btn btn-warning" role="button">Back</a>
-			</div>
-			
-			</div>
-		</form>
-	</div>
 	
 	</body>
 	</html>

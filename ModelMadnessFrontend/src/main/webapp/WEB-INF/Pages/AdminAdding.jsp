@@ -78,6 +78,12 @@
 							</div>
 						</div>
 						<div class="form-group">
+							<label class="control-label col-sm-4" for="prodDesc">Description :  </label>
+							<div class="col-sm-6">
+								<input type="productId" class="form-control" id="productId" placeholder="Enter Product Id" name="productId">
+							</div>
+						</div>
+						<div class="form-group">
 							<label class="control-label col-sm-4" for="productName">Product Name :  </label>
 							<div class="col-sm-6">
 								<input type="productName" class="form-control" id="productName" placeholder="Enter Product Name" name="productName">

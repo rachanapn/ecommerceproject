@@ -28,6 +28,8 @@ import com.ModelMadness.model.Product;
 import com.ModelMadness.model.Supplier;
 import com.ModelMadness.model.User;
 import com.ModelMadness.model.UserDetail;
+
+
 @Configuration
 @ComponentScan("com")
 @EnableTransactionManagement
